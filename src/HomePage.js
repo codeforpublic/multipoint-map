@@ -4,6 +4,7 @@ import { BORDER_RADIUS, COLORS, SHEET_HEIGHT } from './const'
 import { BottomSheet } from './BottomSheet'
 import { GoogleMap } from './GoogleMap'
 import React, { useEffect, useState } from 'react'
+var qs = require('qs')
 
 const fetchData = async ids => {
   const resps = await Promise.all(
@@ -24,8 +25,9 @@ export const HomePage = ({ ...props }) => {
   const [selected, setSelected] = useState(null)
   const [tick, setTick] = useState(1)
   const [datas, setDatas] = useState(null)
+  console.log('props', props)
   useEffect(() => {
-    const ids = props.query.id.split(',')
+    const ids = qs.parse(location.search)['?id'].split(',')
     fetchData(ids).then(resps => {
       const datas = resps.map(o => {
         return {
