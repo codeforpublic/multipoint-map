@@ -1,0 +1,7 @@
+{
+  "semi": false,
+  "trailingComma": "none",
+  "singleQuote": true,
+  "no-func-assign": false,
+  "proseWrap": "always"
+}

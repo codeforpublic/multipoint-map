@@ -1,0 +1,30 @@
+html body {
+  margin: 0;
+  font-size: 16px;
+  font-family: Prompt, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  background-color: #303342;
+  color: #f1f5fa;
+}
+
+html,
+body,
+#__next {
+  height: 100%;
+}
+
+*,
+*:hover,
+*:active,
+*:focus {
+  outline: none !important;
+  box-sizing: border-box;
+}
+
+a,
+a:focus,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
