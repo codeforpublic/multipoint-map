@@ -27,7 +27,11 @@ export const HomePage = ({ ...props }) => {
   const [datas, setDatas] = useState(null)
   console.log('props', props)
   useEffect(() => {
-    const ids = qs.parse(location.search)['?id'].split(',')
+    const idStr = qs.parse(location.search)['?id']
+    if (idStr) {
+      return
+    }
+    const ids = idStr.split(',')
     fetchData(ids).then(resps => {
       const datas = resps.map(o => {
         return {
