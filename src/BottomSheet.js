@@ -34,7 +34,7 @@ export const BottomSheet = ({ data: { battery = {}, timestamp = '' } }) => {
   const time = moment(timestamp).locale('th')
   const { is_charging, level } = battery
   const batteryStatus = is_charging ? 'ชาร์จอยู่' : ''
-  const batteryLevel = Math.round(level * 100)
+  const batteryLevel = Math.abs(Math.round(level * 100))
 
   return (
     <div className="flex flex-col h-full">
