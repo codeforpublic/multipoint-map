@@ -28,7 +28,8 @@ export const HomePage = ({ ...props }) => {
   console.log('props', props)
   useEffect(() => {
     const idStr = qs.parse(location.search)['?id']
-    if (idStr) {
+    console.log('idStr', idStr)
+    if (!idStr) {
       return
     }
     const ids = idStr.split(',')
