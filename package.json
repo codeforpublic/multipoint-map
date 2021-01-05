@@ -11,7 +11,7 @@
     "@emotion/core": "^10.0.28",
     "@svgr/webpack": "^5.2.0",
     "@zeit/next-css": "^1.0.1",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "dotenv-load": "^2.0.0",
     "google-map-react": "^1.1.6",
     "moment-timezone": "^0.5.28",
